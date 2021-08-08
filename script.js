@@ -83,8 +83,8 @@ this.getWorkouts();
         const { latitude } = pos.coords;
         const { longitude } = pos.coords;
         const mapLink = `https://www.google.com.eg/maps/@${latitude},${longitude},10z`
-        // const coordsArr = [latitude, longitude];
-         const coordsArr = [30.0480683,31.2447691];
+        const coordsArr = [latitude, longitude];
+         // const coordsArr = [30.0480683,31.2447691];
         //Displaying map 
         this.#map.setView(coordsArr, this.#zoomLevel + 2); 
         L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
